@@ -42,8 +42,7 @@ create table dept_emp (
 	to_date date not null,
 	foreign key (emp_no) references employees (emp_no),
 	foreign key (emp_no) references salaries (emp_no),
-	foreign key (dept_no) references departments (dept_no),
-	primary key (emp_no)
+	foreign key (dept_no) references departments (dept_no)
 );
 
 create table titles (
@@ -52,13 +51,12 @@ create table titles (
 	from_date date not null,
 	to_date date not null,
 	foreign key (emp_no) references salaries (emp_no),
-	foreign key (emp_no) references employees (emp_no),
-	primary key (emp_no)
+	foreign key (emp_no) references employees (emp_no)
 );
 
-select * from departments
-select * from employees
-select * from dept_manager
-select * from salaries
-select * from dept_emp
-select * from titles
+select * from departments;
+select * from employees;
+select * from dept_manager;
+select * from salaries;
+select * from dept_emp;
+select * from titles;
