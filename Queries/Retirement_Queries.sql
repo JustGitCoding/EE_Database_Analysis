@@ -13,7 +13,6 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
 
 -- Using DISTINCT with ORDER BY to remove duplicate rows
--- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) emp_no,
 	first_name,
 	last_name,
